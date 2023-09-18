@@ -2,7 +2,9 @@
 const AssistantV2 = require("ibm-watson/assistant/v2");
 const { IamAuthenticator } = require("ibm-watson/auth");
 const { Telegraf } = require("telegraf");
-require("dotenv").config(); // Configuração para ler variáveis de ambiente do arquivo .env
+
+// Configuração para ler variáveis de ambiente do arquivo .env
+require("dotenv").config(); 
 
 // Conexão com o Watson Assistant
 const assistant = new AssistantV2({
